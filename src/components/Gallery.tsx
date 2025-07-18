@@ -3,51 +3,56 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import './Gallery.css';
 
+const galleryImages = [
+  {
+    src: '/agbada.jpg',
+    alt: 'Agbada Design 1',
+    category: 'Agbada',
+  },
+  {
+    src: '/another-agbada.jpg',
+    alt: 'Agbada Design 2',
+    category: 'Agbada',
+  },
+  {
+    src: '/style1.jpg',
+    alt: 'Fashion Style 1',
+    category: 'Style',
+  },
+  {
+    src: '/style2.jpg',
+    alt: 'Fashion Style 2',
+    category: 'Style',
+  },
+  {
+    src: '/style3.jpg',
+    alt: 'Fashion Style 3',
+    category: 'Style',
+  },
+  {
+    src: '/style4.jpg',
+    alt: 'Fashion Style 4',
+    category: 'Style',
+  },
+  {
+    src: '/style5.jpg',
+    alt: 'Fashion Style 5',
+    category: 'Style',
+  },
+  {
+    src: '/style6.jpg',
+    alt: 'Fashion Style 6',
+    category: 'Style',
+  },
+  {
+    src: '/style7.jpg',
+    alt: 'Fashion Style 7',
+    category: 'Style',
+  },
+];
+
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-
-  const galleryImages = [
-    {
-      src: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=800&fit=crop",
-      alt: "Traditional Agbada Design",
-      category: "Traditional"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop",
-      alt: "Modern Business Suit",
-      category: "Business"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=800&fit=crop",
-      alt: "Elegant Wedding Attire",
-      category: "Wedding"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=800&fit=crop",
-      alt: "Casual Fashion Collection",
-      category: "Casual"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=800&fit=crop",
-      alt: "Traditional Nigerian Wear",
-      category: "Traditional"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop",
-      alt: "Formal Evening Suit",
-      category: "Formal"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=800&fit=crop",
-      alt: "Custom Embroidery Work",
-      category: "Custom"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=800&fit=crop",
-      alt: "Contemporary Fashion Design",
-      category: "Contemporary"
-    }
-  ];
 
   const nextImage = () => {
     if (selectedImage !== null) {
