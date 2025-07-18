@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, MessageCircle, Heart } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Heart } from 'lucide-react';
 import './Footer.css';
 
 const Footer: React.FC = () => {

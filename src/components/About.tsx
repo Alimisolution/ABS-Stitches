@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, MapPin, Phone, Mail } from 'lucide-react';
+import { Award, MapPin, Phone } from 'lucide-react';
 import './About.css';
 
 const About: React.FC = () => {
