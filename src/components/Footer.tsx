@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
         >
           <div className="footer-line"></div>
           <div className="footer-bottom-content">
-            <p>&copy; 2024 A.B.S Stitches. All rights reserved.</p>
+            <p>&copy; 2025 A.B.S Stitches. All rights reserved.</p>
             <p className="made-with">
               Made with <Heart size={14} /> for Adeleke Abass
             </p>
